@@ -37,9 +37,22 @@ public class LineComputationComparison {
 		{
 			System.out.println("Lines are equal");
 		}
-		else
+		if (R<R1)
 		{
-			System.out.println("Not equal");
+			System.out.println("Line 1 is less than Line 2");
+		}
+		else if(R>R1)
+		{
+			System.out.println("Line 1 is greater than Line 2");
+		}
+		else if(R1<R)
+		{
+			System.out.println("Line 2 is Less than Line 1");
+			
+		}
+		else if(R1>R)
+		{
+			System.out.println("Line 2 is greater than Line 1");
 		}
 	
 	}
