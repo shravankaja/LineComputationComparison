@@ -1,61 +1,54 @@
 import java.util.*;
+import java.lang.*; 
 public class LineComputationComparison {
-
+	static void equalsTo(double x, double y) 
+		{
+				if(x==y)
+						{
+							System.out.println("Lines are equal");
+						}
+				else 
+						{
+							System.out.println("Lines are not equal");
+						}
+		}
 	public static void main(String Args[])
 	{
 		System.out.println("Welcome to Line Computation and Comparison Program");
 		
 		System.out.println("Enter Point (x1,y1)");
 		Scanner sc= new Scanner(System.in);
-		int x1= sc.nextInt();
-		int y1= sc.nextInt();  
+		float x1= sc.nextFloat();
+		float y1= sc.nextFloat();  
 	
 		System.out.println("Enter Point (x2,y2)");
-		int x2= sc.nextInt();
-		int y2= sc.nextInt(); 
+		float x2= sc.nextFloat();
+		float y2= sc.nextFloat(); 
 		
-		int A=x2-x1;
-		int B=y2-y1;
-		double P= Math.pow(A, 2) + Math.pow(B, 2);
-		double R=Math.sqrt(P);
-		System.out.println("Lenght of the line based on the coordinates is : "+R);
+		float A=x2-x1;
+		float B=y2-y1;
+		double Power = Math.pow(A, 2) + Math.pow(B, 2);
+		double resultLine1 = Math.sqrt(Power);
+		System.out.println("Lenght of the line based on the coordinates is : "+resultLine1);
 		
 		System.out.println("Enter Point of second line (x1,y1)");
-		int x11= sc.nextInt();
-		int y11= sc.nextInt();  
+		float x11= sc.nextFloat();
+		float y11= sc.nextFloat();  
 	
 		System.out.println("Enter Point (x2,y2)");
-		int x22= sc.nextInt();
-		int y22= sc.nextInt(); 
-		
-		int A1=x22-x11;
-		int B1=y22-y11;
-		double P1= Math.pow(A1, 2) + Math.pow(B1, 2);
-		double R1=Math.sqrt(P1);
-		System.out.println("Lenght of the second line based on the coordinates is : "+R1);
-		if(R==R1)
-		{
-			System.out.println("Lines are equal");
-		}
-		if (R<R1)
-		{
-			System.out.println("Line 1 is less than Line 2");
-		}
-		else if(R>R1)
-		{
-			System.out.println("Line 1 is greater than Line 2");
-		}
-		else if(R1<R)
-		{
-			System.out.println("Line 2 is Less than Line 1");
-			
-		}
-		else if(R1>R)
-		{
-			System.out.println("Line 2 is greater than Line 1");
-		}
+		float x22= sc.nextFloat();
+		float y22= sc.nextFloat();
 	
+		float A1=x22-x11;
+		float B1=y22-y11;
+		double Power1 = Math.pow(A1, 2) + Math.pow(B1, 2);
+		double resultLine2 = Math.sqrt(Power1);
+		System.out.println("Lenght of the second line based on the coordinates is : "+resultLine2); 
+		equalsTo(resultLine1,resultLine2);
 	}
 
 }
+
+
 	
+ 
