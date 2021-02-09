@@ -12,6 +12,18 @@ public class LineComputationComparison {
 							System.out.println("Lines are not equal");
 						}
 		}
+	static void compareTo(double x, double y)
+		{
+				if (x > y)
+						{
+							System.out.println("Line1 is greater than Line2");
+						}
+				else if (y > x)
+						{
+							System.out.println("Line2 is greater than Line2");
+						}
+		
+		}
 	public static void main(String Args[])
 	{
 		System.out.println("Welcome to Line Computation and Comparison Program");
@@ -45,6 +57,7 @@ public class LineComputationComparison {
 		double resultLine2 = Math.sqrt(Power1);
 		System.out.println("Lenght of the second line based on the coordinates is : "+resultLine2); 
 		equalsTo(resultLine1,resultLine2);
+		compareTo(resultLine1,resltLLine2);
 	}
 
 }
